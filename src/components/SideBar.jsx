@@ -1,6 +1,6 @@
 // FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRightFromBracket, faHouse, faCalendarDays, faMessage } from '@fortawesome/free-solid-svg-icons';
+import { faRightFromBracket, faHouse, faCalendarDays, faMessage, faChartSimple, faMoneyBill } from '@fortawesome/free-solid-svg-icons';
 
 const SideBar = () => {
 
@@ -23,9 +23,14 @@ const SideBar = () => {
           <FontAwesomeIcon icon={faMessage} size="lg" />
            <p>Messages</p>
           </li>
-          {/* <li className='flex gap-1.5'>
-           <p>Settings</p>
-          </li> */}
+          <li className='flex gap-1.5'>
+          <FontAwesomeIcon icon={faMoneyBill} size="lg" />
+           <p>Purchases</p>
+          </li>
+          <li className='flex gap-1.5'>
+          <FontAwesomeIcon icon={faChartSimple} size="lg" />
+           <p>Analytics</p>
+          </li>
           <li className='flex gap-1.5'>
           <FontAwesomeIcon icon={faRightFromBracket} size="lg" />
            <p>Logout</p>

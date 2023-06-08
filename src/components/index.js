@@ -5,5 +5,7 @@ import LineChart from './charts/LineChart'
 import PieChart from './charts/PieChart'
 import DonutChart from './charts/DonutChart'
 import Modal from './Modal'
+import Purchases from './Purchases'
 
-export  { Navbar, SideBar, BarChart, LineChart, PieChart, DonutChart, Modal }
+
+export  { Navbar, SideBar, BarChart, LineChart, PieChart, DonutChart, Modal, Purchases }

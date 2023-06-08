@@ -55,6 +55,7 @@ function LineChart() {
       <Line
   options={chartOptions}
   data={chartData}
+  className='h-48'
 
 />
     </div>

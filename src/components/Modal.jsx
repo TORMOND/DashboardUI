@@ -50,7 +50,12 @@ const Modal = ({toggleSearch})=>{
                 <div className='w-full p-2 flex gap-2.5 justify-between items-center border-b border-b-gray-300'>
                 <div  className=' text-start px-2 flex gap-1.5 items-center w-5/6'>
                 <FontAwesomeIcon icon={faMagnifyingGlass}  className="" />
-                    <input type='text' placeholder='Search' className='border-0 w-full py-1 px-2 bg-gray-50 focus:outline-0' />
+                    <input 
+                    type='text' 
+                    placeholder='Search'
+                    className='border-0 w-full py-1 px-2 bg-gray-50 focus:outline-0'
+                    
+                    />
                 </div>
                     <button onClick={toggleSearch} className='border border-gray-300 rounded-sm py-1 px-1.5'>
                     <FontAwesomeIcon icon={faXmark} size="lg" />

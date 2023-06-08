@@ -1,6 +1,6 @@
 import '../main.css'
 import {useState } from 'react'
-import { Navbar, SideBar, BarChart, LineChart, PieChart, DonutChart, Modal }  from '../components'
+import { Navbar, SideBar, LineChart, PieChart, DonutChart, Modal, Purchases }  from '../components'
 
 const Dashboard = ()=>{
   const [isModal, setIsModal ] = useState(false)
@@ -24,12 +24,15 @@ return(
         />
         <div className='w-full grid grid-cols-3 gap-1'>
           <div className='col-span-2 bg-white p-4 min-h-screen'>  
-            <LineChart />
+            
             <PieChart/>
-            <BarChart />
+            {/* <BarChart /> */}
+            <Purchases />
             </div>
-        <div className='bg-white p-4 top-0 sticky min-h-screen'>
+        <div className='bg-white p-4 top-0 sticky h-screen'>
+
         <DonutChart />
+        <LineChart />
           </div>
         </div>
       </div>
